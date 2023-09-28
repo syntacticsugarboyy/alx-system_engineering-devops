@@ -1,5 +1,5 @@
 #!/bin/env bash
-* SSH Keys...
+* SSH Keys can be generated in linux by running the command *ssh-keygen -t rsa*
 
 * #!/bin/env bash is more advantageous than #!/bin/bash due to its portability.
 
