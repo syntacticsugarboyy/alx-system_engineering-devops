@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script dispays superstitious numbers from 1 - 20.
+number=1
+while ((number <= 20))
+do
+	case $number in
+		4)
+			echo "$number"
+			echo "bad luck from China"
+			;;
+		9)
+			echo "$number"
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "$number"
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo "$number"
+			;;
+	esac
+
+	((number++))
+done
+		
