@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times, with a little tweak.
+loop=0
+while  ((loop < 10))
+do
+	echo "Best School"
+
+	if ((loop == 8))
+	then
+		echo "Hi"
+	fi
+	((loop++))
+done
