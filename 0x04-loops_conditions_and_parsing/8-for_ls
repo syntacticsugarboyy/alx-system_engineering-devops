@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script displays the contents of the current directory minus its prefixes
+for list in *
+do
+	echo "$list" | cut -d '-' -f 2
+done
