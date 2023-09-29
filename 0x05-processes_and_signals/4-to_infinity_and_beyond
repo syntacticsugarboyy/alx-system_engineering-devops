@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays a text to infinity
+
+for ((loop = 0; loop < 10;))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
