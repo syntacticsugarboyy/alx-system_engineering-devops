@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays a text to infinity
+
+trap toyota SIGTERM
+
+toyota()
+{
+	echo "I am invincible!!!"
+}
+
+for ((loop = 0; loop < 10;))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
