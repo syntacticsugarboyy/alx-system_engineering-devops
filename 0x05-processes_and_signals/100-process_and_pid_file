@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# This script does a lot of things
+
+trap hate SIGTERM
+trap love SIGINT
+trap del SIGQUIT
+
+hate()
+{
+	echo "I hate the kill command"
+	del
+}
+
+love()
+{
+	echo "Y U no love me?!"
+}
+
+del()
+{
+	rm /var/run/myscript.pid
+	exit
+}
+
+echo "$$" > /var/run/myscript.pid
+
+for ((loop = 0; loop < 10;))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
