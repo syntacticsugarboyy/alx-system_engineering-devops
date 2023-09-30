@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# This script kills the highlander
+
+for toyota in $(pgrep -f 7-highlander)
+do
+	kill -9 "$toyota"
+done
