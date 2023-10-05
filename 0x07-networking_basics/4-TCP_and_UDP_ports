@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script displays ports and their processes.
+
+netstat -lp
